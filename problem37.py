@@ -5,7 +5,7 @@ Problem 37
 '''
 
 
-from primes import PrimeSieve
+from util import PrimeSieve
 
 
 __directions = ['LEFT','RIGHT']
