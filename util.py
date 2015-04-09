@@ -1,8 +1,23 @@
 #!/usr/bin/python
 '''
 Project Euler
-Prime Utility module
+Utility module
 '''
+
+
+def pandigital(n, number):
+    """ Test number is pandigital to nth degree. """
+    assert type(n) is int, "n should be integer"
+    assert type(number) is int, "number should be integer"
+    assert n > 0, "n should be positive."
+
+    number = str(number)
+    if len(number) != n:
+        return False
+    for x in range(1,n):
+        if not x in number:
+            return False
+    return True
 
 
 class PrimeSieve:
